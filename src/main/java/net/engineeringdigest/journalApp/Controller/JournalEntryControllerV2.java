@@ -10,7 +10,7 @@ import java.util.Map;
 
 
 @RestController
-@RequestMapping("_journal")
+@RequestMapping("_journally")
 public class JournalEntryControllerV2 {
 
 
