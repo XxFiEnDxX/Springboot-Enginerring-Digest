@@ -1,34 +1,52 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Ignore Maven/Gradle wrapper files
+mvnw
+mvnw.cmd
+.gradle/
+.gradle-cache/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-*.yml
+# Ignore target directory (Maven and Gradle build output)
+target/
+build/
+
+# Ignore temporary files
 *.log
-### IntelliJ IDEA ###
-.idea
-*.iws
+*.tmp
+*.out
+*.class
+
+# Ignore IDEA/IntelliJ IDE config files
+.idea/
 *.iml
 *.ipr
-/htmlReport
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+*.iws
 
-### VS Code ###
-.vscode/
+# Ignore Eclipse IDE files
+*.classpath
+*.project
+*.settings/
+
+# Ignore NetBeans IDE files
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+
+# Ignore Spring Boot properties that may contain sensitive data
+application*.yml
+application*.properties
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore test reports
+test-output/
+
+# Ignore specific environments
+.env
+
+# Ignore package-lock.json or yarn.lock
+package-lock.json
+yarn.lock
